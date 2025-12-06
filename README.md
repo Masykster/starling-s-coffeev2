@@ -84,7 +84,7 @@ Dibangun dengan standar web modern untuk performa maksimal:
 
 | Halaman Utama (Desktop) | Tampilan Menu (Mobile) |
 | :---: | :---: |
-| <img src="https://via.placeholder.com/600x350?text=Screenshot+Desktop" alt="Desktop View" width="100%"> | <img src="https://via.placeholder.com/250x450?text=Mobile+View" alt="Mobile View" height="300"> |
+| <img width="2620" height="4514" alt="Image" src="https://github.com/user-attachments/assets/119727c2-1fa5-4098-b00a-7325e1d16caa" alt="Desktop View" width="100%"> |<img width="828" height="5306" alt="Image" src="https://github.com/user-attachments/assets/2b329d4c-5a0f-4e57-b5b1-62601ede5a64" alt="Mobile View" height="300"> |
 
 ---
 
