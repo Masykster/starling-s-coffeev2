@@ -88,16 +88,3 @@ Dibangun dengan standar web modern untuk performa maksimal:
 
 ---
 
-## 📂 Struktur Folder
-
-```text
-starling-s-coffeev2/
-├── assets/
-│   ├── css/           # File Stylesheet (style.css)
-│   ├── img/           # Aset gambar (logo, produk, background)
-│   └── js/            # File JavaScript (script.js)
-├── index.php          # Halaman Utama
-├── about.php          # Halaman Tentang Kami
-├── menu.php           # Halaman Menu
-├── README.md          # Dokumentasi Proyek
-└── LICENSE            # Lisensi Penggunaan
