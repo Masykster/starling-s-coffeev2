@@ -1,0 +1,190 @@
+/* CSS Variables for Theming */
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --header-bg: #fff;
+    --footer-bg: #f8f9fa;
+    --header-shadow: rgba(0,0,0,0.1);
+    --content-page-bg: #fff;
+    --card-text-dark: #1e3932;
+    --bg-light-green: #d4e9e2;
+    --bg-light-pink: #fdd8d8;
+    --border-color: #ddd;
+    --border-bottom-color: #d4e9e2;
+    --icon-fill: #000;
+    --active-color: #00754a;
+    --dot-color: #bbb;
+    --error-color: #d93025;
+    --success-bg: #d4e9e2;
+    --text-muted: #6c757d;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #1e1e1e;
+    --footer-bg: #1e1e1e;
+    --header-shadow: rgba(255,255,255,0.1);
+    --content-page-bg: #2a2a2a;
+    --card-text-dark: #c8e0d8;
+    --bg-light-green: #2a3b37;
+    --bg-light-pink: #4d3a3a;
+    --border-color: #444;
+    --border-bottom-color: #2a3b37;
+    --icon-fill: #fff;
+    --active-color: #00a86b;
+    --dot-color: #555;
+    --error-color: #f28b82;
+    --success-bg: #2a3b37;
+    --text-muted: #adb5bd;
+}
+
+/* Reset dan Gaya Global Dasar - Bootstrap Compatible */
+body { 
+    font-family: 'Lato', sans-serif; 
+    line-height: 1.6; 
+    color: var(--text-color); 
+    background-color: var(--bg-color); 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Header dan Navigasi - Bootstrap Compatible */
+.main-header .navbar { 
+    transition: background-color 0.3s;
+    background-color: var(--header-bg) !important;
+}
+.main-header .navbar-nav .nav-link { 
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 1px; 
+    transition: color 0.3s ease;
+    color: var(--text-color) !important;
+}
+.main-header .navbar-nav .nav-link:hover, 
+.main-header .navbar-nav .nav-link.active { 
+    color: var(--active-color) !important; 
+}
+.main-header .navbar-toggler {
+    border-color: var(--border-color);
+}
+.main-header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    filter: var(--icon-fill) invert(0);
+}
+body.dark-mode .main-header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.theme-toggle-btn { 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    color: var(--text-color);
+}
+.theme-toggle-btn svg { 
+    width: 24px; 
+    height: 24px; 
+    fill: currentColor; 
+}
+
+/* Tombol */
+.btn { padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 14px; text-align: center; transition: all 0.3s ease; border: 1px solid; cursor: pointer; }
+.btn-secondary { background-color: transparent; color: var(--text-color); border-color: var(--text-color); }
+.btn-secondary:hover { background-color: rgba(128, 128, 128, 0.1); }
+body.dark-mode .btn-secondary { color: var(--card-text-dark); border-color: var(--card-text-dark); }
+
+/* Menu Hamburger - Bootstrap handles this now */
+
+/* --- Halaman Beranda (index.php) --- */
+/* Slider - Now using Bootstrap Carousel */
+
+/* Kartu (Beranda) - Bootstrap Compatible */
+section.card { 
+    transition: background-color 0.3s; 
+}
+.bg-light-green { 
+    background-color: var(--bg-light-green) !important; 
+    color: var(--card-text-dark); 
+}
+.bg-light-pink { 
+    background-color: var(--bg-light-pink) !important; 
+    color: var(--card-text-dark); 
+}
+
+
+/* --- Halaman Menu, About, Contact --- */
+
+/* Halaman Konten Umum (About, Contact, Menu) - Bootstrap Compatible */
+.content-page { 
+    background: var(--content-page-bg); 
+    transition: background-color 0.3s; 
+}
+.content-page h1, .content-page h2 { 
+    font-family: 'Oswald', sans-serif; 
+    color: var(--card-text-dark); 
+}
+
+/* Halaman About */
+.content-page h2.dashed-h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    border-bottom-style: dashed;
+}
+.team-list {
+    list-style-type: disc;
+    padding-left: 2rem;
+    max-width: 800px;
+}
+.team-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Halaman Menu - Bootstrap Compatible */
+.menu-item.hidden {
+    display: none !important;
+}
+
+/* Halaman Kontak - Bootstrap Compatible */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.contact-form .form-control.error {
+    border-color: var(--error-color);
+    animation: shake 0.5s;
+}
+.error-message.visible {
+    display: block !important;
+    opacity: 1;
+}
+
+
+/* Footer - Bootstrap Compatible */
+.main-footer-layout { 
+    transition: background-color 0.3s, border-top 0.3s;
+    background-color: var(--footer-bg) !important;
+    border-top-color: var(--border-color) !important;
+}
+.main-footer-layout .text-muted {
+    color: var(--text-muted) !important;
+}
+.footer-social img { 
+    transition: filter 0.3s ease; 
+}
+body.dark-mode .footer-social img { 
+    filter: invert(1); 
+}
+.footer-social a:hover img { 
+    filter: invert(38%) sepia(98%) saturate(1015%) hue-rotate(124deg) brightness(94%) contrast(101%); 
+}
+
+/* Responsif - Bootstrap handles most of this, but we keep custom styles */
+@media (max-width: 768px) {
+    section.card .display-4 {
+        font-size: 2rem;
+    }
+    section.card .display-5 {
+        font-size: 1.75rem;
+    }
+}
