@@ -6,9 +6,14 @@
 
 > **"Brewing Moments, One Cup at a Time."**
 >
-> *Versi 2.0 dari Website Starling's Coffee dengan antarmuka yang lebih segar, responsif, dan interaktif.*
+
 
 ---
+## 👥 Tim Pengembang
+Proyek ini dikembangkan oleh:
+1. **Abdullah Masykur**
+2. **M. Maulidul Adnan**
+3. **Jihan Salma Salsabila**
 
 ## 📋 Daftar Isi
 - [Tentang Proyek](#-tentang-proyek)
@@ -42,11 +47,25 @@ Apa yang baru dibandingkan versi sebelumnya?
 
 ## ✨ Fitur Utama
 
-* **Homepage Imersif:** Hero section dengan visual yang kuat untuk menarik perhatian pengunjung.
-* **Menu Digital:** Tampilan daftar menu kopi dan makanan dengan harga dan deskripsi.
-* **About Us:** Cerita di balik brand Starling's Coffee.
-* **Contact & Lokasi:** Formulir kontak (opsional/fungsional) dan integrasi peta/alamat.
-* **Social Media Links:** Terhubung langsung ke platform sosial media kedai.
+## Sisi Pelanggan (User)
+* **Katalog Menu Digital:** Pelanggan dapat melihat daftar minuman dan makanan dengan gambar, deskripsi, dan harga.
+* **Pencarian Menu:** Fitur pencarian realtime untuk menemukan menu favorit.
+* **Sistem Keranjang & Checkout:** Memesan item dengan pilihan metode pengiriman *Delivery* atau *Pickup* (Ambil di Tempat).
+* **Loyalty Points & Rewards:**
+    * Mendapatkan poin dari setiap transaksi (1 poin per Rp 1.000).
+    * Menukarkan poin dengan diskon, item gratis, atau cashback.
+    * Melihat riwayat perolehan poin dan status reward.
+* **Manajemen Akun:** Registrasi, Login, Edit Profil, dan Ganti Password.
+* **Dark Mode:** Dukungan tema gelap untuk kenyamanan visual.
+
+### Sisi Admin
+* **Dashboard Statistik:** Ringkasan total pesanan, pendapatan, jumlah user, dan item menu.
+* **Manajemen Pesanan (Orders):** Melihat detail pesanan, mengubah status (Pending, Processing, Completed, Cancelled).
+* **Manajemen Menu:** Menambah, mengedit, menghapus, dan mengunggah gambar produk.
+* **Manajemen Kategori:** Mengelompokkan item berdasarkan kategori (Minuman/Makanan).
+* **Manajemen Reward:** Mengatur jenis reward, poin yang dibutuhkan, dan stok reward.
+* **Manajemen User:** Melihat dan mengelola data pengguna terdaftar.
+* **Pengaturan Situs:** Mengubah informasi situs (Nama, Kontak, Sosmed).
 
 ---
 
@@ -66,31 +85,6 @@ Dibangun dengan standar web modern untuk performa maksimal:
 | Halaman Utama (Desktop) | Tampilan Menu (Mobile) |
 | :---: | :---: |
 | <img src="https://via.placeholder.com/600x350?text=Screenshot+Desktop" alt="Desktop View" width="100%"> | <img src="https://via.placeholder.com/250x450?text=Mobile+View" alt="Mobile View" height="300"> |
-
----
-
-## ⚡ Instalasi & Penggunaan
-
-Ikuti langkah ini untuk menjalankan website di komputer lokal (Localhost):
-
-### Jika menggunakan PHP (XAMPP/Laragon):
-1.  **Clone Repositori**
-    Masuk ke folder `htdocs` (untuk XAMPP) atau `www` (untuk Laragon).
-    ```bash
-    git clone [https://github.com/Masykster/starling-s-coffeev2.git](https://github.com/Masykster/starling-s-coffeev2.git)
-    ```
-2.  **Jalankan Server**
-    Buka Control Panel XAMPP dan start **Apache**.
-3.  **Akses Browser**
-    Buka browser dan ketik: `http://localhost/starling-s-coffeev2`
-
-### Jika Static HTML (Tanpa PHP):
-1.  **Clone Repositori**
-    ```bash
-    git clone [https://github.com/Masykster/starling-s-coffeev2.git](https://github.com/Masykster/starling-s-coffeev2.git)
-    ```
-2.  **Buka File**
-    Masuk ke folder proyek dan klik dua kali file `index.html`.
 
 ---
 
